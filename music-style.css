@@ -1,0 +1,170 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/* record */
+body {
+    background-image: url("images/music-background.jpg");
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+}
+
+/* spinning vinyl */
+.vinyl {
+    position: absolute;
+    bottom: -350px;                  
+    left: -740px;                    
+    width: 1650px;                   
+    animation: spin 10s linear infinite;
+    transform-origin: center center;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.record-top {
+    position: absolute;
+    top:15px;          
+    left: -30px;             
+    width: 1250px;         
+    pointer-events: none;
+    z-index: 30;         
+}
+
+/* NAVIGATION */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    color: #fff;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    margin: 0 10px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+
+.main-nav a:hover {
+    text-decoration: underline;
+}
+
+.icons span {
+    font-size: 13px;
+    margin-left: 15px;
+    color: #fff;
+}
+
+/* RIGHT SIDE ALBUMS */
+.album-section {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;               
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    padding-right: 60px;
+    padding-left: 40px;
+    z-index: 5;
+
+}
+
+/* ROWS */
+.album-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;  
+    gap: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ALBUM COVER IMGS */
+.album-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ALBUM TEXT */
+.album-text p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.4;
+    text-align: right;
+    
+}
+
+/* EFFECT */
+.album-card:hover {
+    transform: translateX(-5px);
+}
+
+.album-card:hover img {
+    transform: scale(1.06);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
+}
+
+/* FOOTER */
+.site-footer {
+    width: 100%;
+    padding: 40px 0 50px;
+    text-align: center;
+    color: #ccc;
+    background-color: rgb(140, 91, 6);
+    backdrop-filter: blur(4px);
+    margin-top: 80px;
+}
+
+.footer-nav {
+    margin-bottom: 15px;
+}
+
+.footer-nav a {
+    margin: 0px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    transition: opacity 0.3s ease;
+}
+
+.footer-nav a:hover {
+    opacity: 0.7;
+}
+
+.site-footer p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    opacity: 0.85;
+}
