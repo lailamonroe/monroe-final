@@ -1,22 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+  <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Final</title>
-        
-        <link href="style.css" rel="stylesheer" type="text/css">
-
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <title>Home</title>
+      <link rel="stylesheet" href="index-style.css">
     </head>
-    <body>
-        <h1>Home</h1>
-        <nav class="">
-            <ul>
-                <li><a href="music.html">music</a></li>
-                <li><a href="blog.html">blog</a></li>
-                <li><a href="art.html">art</a></li>
+      <body>
 
-                
-                <li><a href="works-cited.html">works cited</a></li>
-            </ul>
-        </nav>
+        <header>
+          <div class="logo">home (logo)</div>
+          <nav>
+            <a href="music.html">music</a>
+            <a href="blog.html">blog</a>
+            <a href="art.html">art</a>
+          </nav>
+          <div class="icons">◎ &nbsp; X</div>
+        </header>
+
+        <!-- HERO IMAGE OF CHICAGO -->
+        <section class="hero" aria-label="hero"></section>
+
+        <!-- INTERNAL SITE SECTIONS -->
+
+        <section class="cards" id="cards">
+
+          <a id="music" class="card" href="music.html">
+            <img src="images/vinyl-spin-icon.png" alt="music icon">
+              <h3>music</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          </a>
+
+          <a id="blog" class="card" href="blog.html">
+            <img src="images/sun-spin-icon.png" alt="blog icon">
+              <h3>blog</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          </a>
+
+          <a id="art" class="card" href="art.html">
+            <img src="images/art-spin-icon.png" alt="art icon">
+              <h3>art</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          </a>
+        </section>
+
+        <footer class="site-footer">
+          <nav class="footer-nav">
+            <a href="about.html">about</a>
+            <a href="works-cited.html">works cited</a>
+          </nav>
+          <p>© 2025 laila monroe — final project</p>
+        </footer>
+        
+      </body>
+  </html>
