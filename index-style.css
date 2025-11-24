@@ -1,0 +1,150 @@
+/* ========== GLOBAL ========== */
+body {
+    margin: 0;
+    background: #111;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ddd;
+    overflow-x: hidden;
+}
+
+/* remove link underline + default color */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ========== NAVIGATION ========== */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    pointer-events: none; /* makes text hoverable ONLY inside <a> */
+}
+
+header .logo {
+    font-size: 14px;
+    pointer-events: auto;
+}
+
+nav {
+    pointer-events: auto;
+}
+
+nav a {
+    margin: 0 15px;
+    font-size: 14px;
+    text-transform: lowercase;
+    letter-spacing: 1px;
+}
+
+header .icons span {
+    margin-left: 15px;
+    font-size: 14px;
+    pointer-events: auto;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+    height: 100vh;
+    width: 100%;
+    background-image: url("images/city-skyline.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ========== 3-COLUMN CARDS ========== */
+.cards {
+    padding: 80px 0 120px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    background: url("images/water-skyline.jpg");
+    background-size: cover;
+    background-position: unset;
+    
+}
+
+.card {
+    width: 260px;
+    padding: 30px;
+    background: rgba(100, 120, 130, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 35px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: rgba(100, 120, 130, 0.30);
+}
+
+/* icons */
+.card img {
+    width: 250px;
+    margin-bottom: 15px;
+    opacity: 0.9;animation: spin 10s linear infinite;
+    transform-origin: center center;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+
+}
+
+.card h3 {
+    font-weight: bold;
+    text-transform: lowercase;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* ===== FOOTER ===== */
+.site-footer {
+    width: 100%;
+    padding: 40px 0 50px;
+    text-align: center;
+    color: #ccc;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(4px);
+    margin-top: 80px;
+}
+
+.footer-nav {
+    margin-bottom: 15px;
+}
+
+.footer-nav a {
+    margin: 0 20px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    transition: opacity 0.3s ease;
+}
+
+.footer-nav a:hover {
+    opacity: 0.7;
+}
+
+.site-footer p {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    opacity: 0.85;
+}
