@@ -28,15 +28,21 @@ header {
   align-items: center;
   z-index: 10;
   pointer-events: none; 
+  text-decoration: none;
+  color:#f0e7d6;
 }
 
 header .logo {
   font-size: 14px;
   pointer-events: auto;
+  text-decoration: none;
+  color:#f0e7d6;
 }
 
 nav {
   pointer-events: auto;
+  text-decoration: none;
+  color:#f0e7d6;
 }
 
 nav a {
