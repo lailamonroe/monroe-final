@@ -11,41 +11,51 @@
 }
 
 /* HEADER */
+
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 25px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-    pointer-events: none; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px 0;              
+  display: flex;
+  justify-content: center;      
+  align-items: center;
+  z-index: 10;
+  pointer-events: none; 
+  color: #fdf6ecc5;
 }
 
 header .logo {
-    font-size: 14px;
-    pointer-events: auto;
-    color: #fdf6ecc5;
+  position: absolute;
+  left: 40px;                   
+  font-size: 14px;
+  pointer-events: auto;
+  color: #f0e7d6;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  pointer-events: auto;
 }
 
 nav {
-    pointer-events: auto;
+  pointer-events: auto;
 }
 
 nav a {
-    margin: 0 15px;
-    font-size: 14px;
-    text-transform: lowercase;
-    letter-spacing: 1px;
-    color: #fdf6ecc5;
-    text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #f0e7d6;
+  pointer-events: auto;
 }
 
 header .icons span {
-    margin-left: 15px;
-    font-size: 14px;
-    pointer-events: auto;
+  margin-left: 15px;
+  font-size: 14px;
+  pointer-events: auto;
 }
 
 /* MAIN LAYOUT */
@@ -57,22 +67,17 @@ header .icons span {
 .art-layout {
   position: relative;
   width: 100%;
-  /* let the content decide the height */
 }
 
 .art-stickers {
   position: relative;
   width: 100%;
-  /* no fixed height – lets art-items stack naturally */
 }
 
-
-/* each art-item holds a sticker + its info panel */
 .art-item {
   position: relative;
 }
 
-/* STICKER LOOK */
 .art-card {
   width: 230px;
   height: 230px;
@@ -87,7 +92,6 @@ header .icons span {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* slight angles so they feel like stickers */
 .art-card-1 { transform: rotate(-3deg); }
 .art-card-2 { transform: translateX(80px) rotate(2deg); }
 .art-card-3 { transform: rotate(-1deg); }
@@ -99,7 +103,6 @@ header .icons span {
   object-fit: cover;
 }
 
-/* hover pop-out */
 .art-card:hover {
   transform: scale(1.03);
   box-shadow: 0 18px 32px rgba(0, 0, 0, 0.8);
@@ -168,7 +171,7 @@ header .icons span {
   object-fit: cover;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER  */
 
 .site-footer {
   position: fixed;
