@@ -11,7 +11,7 @@ body {
 }
 
 .music-body {
-  background-color: #fcf6e8;
+  background-color: #fffefdba;
   color: #f8f4f0;
 }
 
@@ -221,4 +221,5 @@ header .icons span {
   letter-spacing: 1px;
   margin-top: 6px;
   opacity: 0.85;
+
 }
