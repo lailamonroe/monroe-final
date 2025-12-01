@@ -15,9 +15,9 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 25px 40px;
+  padding: 25px 0;              
   display: flex;
-  justify-content: space-between;
+  justify-content: center;      
   align-items: center;
   z-index: 10;
   pointer-events: none; 
@@ -25,9 +25,16 @@ header {
 }
 
 header .logo {
+  position: absolute;
+  left: 40px;                   
   font-size: 14px;
   pointer-events: auto;
-  color: #fdf6ecc5;
+  color: #f0e7d6;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  pointer-events: auto;
 }
 
 nav {
@@ -41,6 +48,7 @@ nav a {
   letter-spacing: 1px;
   text-decoration: none;
   color: #f0e7d6;
+  pointer-events: auto;
 }
 
 header .icons span {
@@ -48,8 +56,6 @@ header .icons span {
   font-size: 14px;
   pointer-events: auto;
 }
-
-
 
 /* MAIN NOTEBOOK AREA */
 
