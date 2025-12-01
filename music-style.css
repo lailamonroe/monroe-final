@@ -15,34 +15,36 @@ body {
   color: #f8f4f0;
 }
 
-
-/* HEADER  */
+/* HEADER */
 
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 25px 40px;
+  padding: 25px 0;              
   display: flex;
-  justify-content: space-between;
+  justify-content: center;      
   align-items: center;
   z-index: 10;
   pointer-events: none; 
-  text-decoration: none;
-  color:#f0e7d6;
+  color: #fdf6ecc5;
 }
 
 header .logo {
+  position: absolute;
+  left: 40px;                   
   font-size: 14px;
   pointer-events: auto;
+  color: #f0e7d6;
   text-decoration: none;
-  color:#f0e7d6;
+  font-size: 14px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  pointer-events: auto;
 }
 
 nav {
   pointer-events: auto;
-  text-decoration: none;
-  color:#f0e7d6;
 }
 
 nav a {
@@ -51,7 +53,8 @@ nav a {
   text-transform: lowercase;
   letter-spacing: 1px;
   text-decoration: none;
-  color:#f0e7d6;
+  color: #f0e7d6;
+  pointer-events: auto;
 }
 
 header .icons span {
@@ -63,15 +66,13 @@ header .icons span {
 /* VINYL Position */
 
 .hero-image {
-          
   align-items: center;
-
 }
 
 /* spinning vinyl */
 .vinyl {
   position: absolute;
-  left:-20%;              
+  left: -20%;              
   top: -40%;               
   transform: translate(-50%, -50%) rotate(0deg); 
   width: 2000px;           
@@ -85,7 +86,6 @@ header .icons span {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
-
 
 /*  RIGHT SIDE: ALBUMS  */
 
@@ -118,7 +118,7 @@ header .icons span {
 .album-scroll {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 15px;
 }
 
 /* album rows */
@@ -127,7 +127,7 @@ header .icons span {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: 50px;
+  gap: 40px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: #f0e7d6;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -135,8 +135,8 @@ header .icons span {
 
 /* album cover images */
 .album-card img {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 6px;
   object-fit: cover;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -154,6 +154,21 @@ header .icons span {
   color: #f5e9d7;
   text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   text-decoration: none;
+}
+
+.album-text h2 a {
+  color: #ffae00c1;             
+  text-decoration: none;       
+  font-style: italic;
+  font-family: "subway-berlin-sc", sans-serif;
+  font-weight: 400;
+  font-size: 40px;     
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.9);
+}
+
+.album-text h2 a:hover {
+  opacity: 0.7;                
 }
 
 .h3 {
