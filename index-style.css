@@ -13,40 +13,52 @@ a {
     text-decoration: none;
     color: inherit;
 }
+/* HEADER */
 
-/* NAV */
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 25px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 10;
-    pointer-events: none; 
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px 0;              
+  display: flex;
+  justify-content: center;      
+  align-items: center;
+  z-index: 10;
+  pointer-events: none; 
+  color: #fdf6ecc5;
 }
 
 header .logo {
-    font-size: 14px;
-    pointer-events: auto;
+  position: absolute;
+  left: 40px;                   
+  font-size: 14px;
+  pointer-events: auto;
+  color: #f0e7d6;
+  text-decoration: none;
+  font-size: 14px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  pointer-events: auto;
 }
 
 nav {
-    pointer-events: auto;
+  pointer-events: auto;
 }
 
 nav a {
-    margin: 0 15px;
-    font-size: 14px;
-    text-transform: lowercase;
-    letter-spacing: 1px;
+  margin: 0 15px;
+  font-size: 14px;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #f0e7d6;
+  pointer-events: auto;
 }
 
 header .icons span {
-    margin-left: 15px;
-    font-size: 14px;
-    pointer-events: auto;
+  margin-left: 15px;
+  font-size: 14px;
+  pointer-events: auto;
 }
 
 /* HERO IMAGE */
