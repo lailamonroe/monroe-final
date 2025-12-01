@@ -13,6 +13,7 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
 /* HEADER */
 
 header {
@@ -116,7 +117,8 @@ header .icons span {
 .card img {
     width: 250px;
     margin-bottom: 15px;
-    opacity: 0.9;animation: spin 10s linear infinite;
+    opacity: 0.9;
+    animation: spin 10s linear infinite;
     transform-origin: center center;
 }
 
